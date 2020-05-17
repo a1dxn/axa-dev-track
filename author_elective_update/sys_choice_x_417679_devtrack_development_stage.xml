@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="stage" table="x_417679_devtrack_development" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_417679_devtrack_development</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-17 11:21:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ec9f1b8607b4d010d318fd1e7c1ed0bd</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-17 11:29:06</sys_updated_on>
+            <value>draft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Scoping</label>
+            <language>en</language>
+            <name>x_417679_devtrack_development</name>
+            <sequence>50</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-17 10:59:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>059a174207b4d010d318fd1e7c1ed010</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-17 11:01:39</sys_updated_on>
+            <value>scope</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Development</label>
+            <language>en</language>
+            <name>x_417679_devtrack_development</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-17 10:59:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>467a9f8e0774d010d318fd1e7c1ed007</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-17 11:01:39</sys_updated_on>
+            <value>dev</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Testing / QA</label>
+            <language>en</language>
+            <name>x_417679_devtrack_development</name>
+            <sequence>200</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-17 10:59:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e8ad3ce0774d010d318fd1e7c1ed0e0</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-17 11:01:39</sys_updated_on>
+            <value>test</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Deployment</label>
+            <language>en</language>
+            <name>x_417679_devtrack_development</name>
+            <sequence>300</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-17 11:01:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8eaa974207b4d010d318fd1e7c1ed0d4</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-17 11:01:39</sys_updated_on>
+            <value>deploy</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>stage</element>
+            <name>x_417679_devtrack_development</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Aidan.Lovegrove</sys_created_by>
+            <sys_created_on>2020-05-17 10:59:20</sys_created_on>
+            <sys_id>4a8a174207b4d010d318fd1e7c1ed04e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>stage</sys_name>
+            <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+            <sys_update_name>sys_choice_x_417679_devtrack_development_stage</sys_update_name>
+            <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+            <sys_updated_on>2020-05-17 10:59:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

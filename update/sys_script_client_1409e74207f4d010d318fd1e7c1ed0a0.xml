@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>raised_from</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Fetch Raised Info</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if(isLoading || newValue=='') return;
+
+	var ga = new GlideAjax('devTrackServer');
+    ga.addParam('sysparm_name', 'getRaisedInfo');
+    ga.addParam('sysparm_table', g_form.getValue('raised_from_table'));
+	ga.addParam('sysparm_record', newValue);
+    ga.getXML(function(response){
+		var r = JSON.parse(response.responseXML.documentElement.getAttribute("answer"));
+		for(var f in r) {
+			jslog(f+": "+r[f]);
+			var old = g_form.getDisplayBox(f)==null ? g_form.getValue(f) : g_form.getDisplayBox(f).value;
+			g_form.setValue(f, r[f]);
+			g_form.flash(f,'orange', 0);
+			if(r[f]!=old) g_form.showFieldMsg(f,'This value has been changed from \''+old+'\' because Raised From was updated.');
+		}
+
+	});
+
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-17 12:14:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1409e74207f4d010d318fd1e7c1ed0a0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Fetch Raised Info</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_script_client_1409e74207f4d010d318fd1e7c1ed0a0</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-17 12:42:12</sys_updated_on>
+        <table>x_417679_devtrack_development</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

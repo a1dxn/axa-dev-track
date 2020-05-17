@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Development" max_length="40" name="x_417679_devtrack_development" sizeclass="5" type="collection">
+    <element audit="true" extends="task" label="Development" max_length="40" name="x_417679_devtrack_development" sizeclass="12" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Actions Taken" max_length="4000" name="actions" type="string"/>
-        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Components" max_length="1024" name="components" read_only="true" type="glide_list"/>
         <element attributes="edge_encryption_enabled=true" label="Impact" max_length="4000" name="dev_impact" type="string"/>
         <element display="true" label="Display Name" max_length="100" name="display_name" read_only="true" type="string"/>
-        <element label="Feedback Users" max_length="4000" name="feedback_users" type="string"/>
-        <element label="Main Module" max_length="32" name="main_module" reference="x_417679_devtrack_sn_module" reference_cascade_rule="restrict" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element attributes="encode_utf8=false" label="PROD Change" max_length="32" name="promoted_prod_change" reference="change_request" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Testing Feedback" max_length="4000" name="feedback" type="journal_input"/>
+        <element attributes="encode_utf8=false" hint="The group automatically generated for this development" label="Feedback Group" max_length="32" name="feedback_group" read_only="true" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="closed" label="Feedback State" max_length="40" name="feedback_state" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Closed" sequence="1" value="closed"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Users who provided Feedback" max_length="1024" name="feedback_users" reference="sys_user" type="glide_list"/>
+        <element label="Main Module" mandatory="true" max_length="32" name="main_module" reference="x_417679_devtrack_sn_module" reference_cascade_rule="restrict" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element dependent="feedback" dependent_on_field="feedback" label="Overall Feedback" max_length="4000" name="overall_feedback" type="journal_list" use_dependent_field="true"/>
+        <element label="Parent Development" max_length="32" name="parent_development" reference="x_417679_devtrack_development" type="reference"/>
+        <element attributes="encode_utf8=false" label="PROD Change" max_length="32" name="promoted_prod_change" reference="change_request" reference_cascade_rule="restrict" reference_qual="u_environment=production^EQ" reference_qual_condition="u_environment=production^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="PROD Promoted On" max_length="40" name="promoted_prod_on" type="glide_date_time"/>
         <element choice="3" choice_field="promoted_uat_state" choice_table="x_417679_devtrack_development" default="0" label="PROD Promotion" max_length="40" name="promoted_prod_state" type="integer">
             <choice>
@@ -17,6 +26,7 @@
                 <element inactive_on_update="false" label="Promoted" sequence="4" value="15"/>
             </choice>
         </element>
+        <element label="UAT Change" max_length="32" name="promoted_uat_change" reference="change_request" reference_qual="u_environment=uat^EQ" reference_qual_condition="u_environment=uat^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="UAT Promoted On" max_length="40" name="promoted_uat_on" type="glide_date_time"/>
         <element choice="3" default="0" label="UAT Promotion" max_length="40" name="promoted_uat_state" type="integer">
             <choice>
@@ -40,7 +50,15 @@
         </element>
         <element attributes="edge_encryption_enabled=true" label="Raised On" max_length="40" name="raised_on" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Solution" max_length="4000" name="solution" type="string"/>
-        <element label="UAT Change" max_length="32" name="uat_change" reference="change_request" reference_cascade_rule="restrict" type="reference"/>
+        <element choice="3" default="draft" label="Stage" max_length="40" name="stage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element dependent_value="1" inactive_on_update="false" label="Scoping" sequence="50" value="scope"/>
+                <element dependent_value="1" inactive_on_update="false" label="Development" sequence="100" value="dev"/>
+                <element dependent_value="1" inactive_on_update="false" label="Testing / QA" sequence="200" value="test"/>
+                <element dependent_value="1" inactive_on_update="false" label="Deployment" sequence="300" value="deploy"/>
+            </choice>
+        </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var r = '';&#13;&#10;&#9;var gr = new GlideRecord('x_417679_devtrack_m2m_update_sets_developments');&#13;&#10;&#9;gr.addQuery('development='+current.sys_id);&#13;&#10;&#9;gr.query();&#13;&#10;&#9;while(gr.next()) r += gr.update_set.name+'\n';&#13;&#10;&#9;&#13;&#10;&#9;return r;&#13;&#10;&#13;&#10;})(current);" hint="Use the related list to associate update sets" label="Update Sets" max_length="4000" name="update_sets" read_only="true" type="string"/>
     </element>
 </database>

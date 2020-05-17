@@ -26,7 +26,7 @@
         <omit_new_button>false</omit_new_button>
         <related_list>x_417679_devtrack_feedback.parent</related_list>
         <sys_class_name>sys_ui_list_control</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
         <sys_created_on>2020-05-13 23:29:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
@@ -38,7 +38,7 @@
         <sys_policy/>
         <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
         <sys_update_name>sys_ui_list_control_85cfd90907385010d318fd1e7c1ed0bb</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
         <sys_updated_on>2020-05-13 23:29:24</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

@@ -4,15 +4,46 @@
         <active>true</active>
         <api_name>x_417679_devtrack.devTrackServer</api_name>
         <caller_access/>
-        <client_callable>false</client_callable>
+        <client_callable>true</client_callable>
         <description/>
         <name>devTrackServer</name>
         <script><![CDATA[var devTrackServer = Class.create();
-devTrackServer.prototype = {
-    initialize: function() {
-    },
+devTrackServer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
-	checkNextNumber : function(table,number) {
+	getRecordLink : function(t,r) { //server and client
+		var table = t || this.getParameter('sysparm_table');
+		var record = r || this.getParameter('sysparm_record');
+		
+		var print = '<a href="$link" target="_blank" rel="noopener">$Number</a>';
+		
+		var gr = new GlideRecord(table);
+		if(gr.get(record)) {
+			
+			print = print.replace('$Number', gr.getDisplayValue());
+			print = print.replace('$link', gr.getTableName()+".do?sys_id="+gr.sys_id);
+			return print;
+		}
+		return '';
+	},
+	
+	getRaisedInfo : function(t, r) {
+		var table = t || this.getParameter('sysparm_table');
+		var record = r || this.getParameter('sysparm_record');
+		var result = {raised_by:'', raised_on:''};
+		
+		var gr = new GlideRecord(table);
+		if(gr.get(record)) {
+			result.raised_on = gr.getValue('sys_created_on');
+			var choice = 'sys_opened_by';
+			if(table=='sc_req_item') choice = 'requested_for';
+			else if(table=='incident') choice = 'caller_id';
+			else if(table=='change_request') choice = 'requested_by';
+			result.raised_by = gr.getValue(choice);
+		}
+		return table==t ? result : JSON.stringify(result);
+	},
+	
+	checkNextNumber : function(table,number) { //server only
 		var gr = new GlideRecord(table);
 		gr.addQuery('number='+number);
 		gr.query();
@@ -20,7 +51,8 @@ devTrackServer.prototype = {
 		else return this.checkNumberConformity(table,number);
 	},
 	
-	getNextNumber : function(table, number) {
+	getNextNumber : function(t) { //server or client
+		var table = t || this.getParameter('sysparm_table');
 		var gr = new GlideRecord(table);
 		gr.orderByDesc('number');
 		gr.query();
@@ -31,7 +63,7 @@ devTrackServer.prototype = {
 		return this.checkNumberConformity(table, n);
 	},
 	
-	checkNumberConformity : function(table,number){
+	checkNumberConformity : function(table,number){ //server only
 		var pre = new GlideRecord('sys_number');
 		pre.addQuery('category.name='+table);
 		pre.query();
@@ -51,7 +83,7 @@ devTrackServer.prototype = {
 	/*
 	@param current = GlideRecord of record to update.
 	*/
-	updateReportFields : function(current) {
+	updateReportFields : function(current) { //server only
 		var tables = this.getM2MTables(current.sys_class_name);
 		var tableRecords = this.getM2MRecords(tables, current.sys_id);
 		
@@ -63,7 +95,7 @@ devTrackServer.prototype = {
 					//insert related record field value into format
 					var field2find = "<"+this.reportFields[rField].fields[i]+">";
 					var fieldval =  tableRecords[this.reportFields[rField].table][record][this.reportFields[rField].fields[i]];
-					print = print.replace(field2find, fieldval); 
+					print = print.replace(field2find, fieldval!=''&&fieldval!=null? fieldval: '<empty>'); 
 				}
 				current[rField] += print+"\n";
 			}
@@ -75,7 +107,7 @@ devTrackServer.prototype = {
 	@param tables = object of sys_m2m objects.
 	@return object of tables of records. {table1:[record1:GlideRecord, record2:GlideRecord]}
 	*/
-	getM2MRecords : function(tables, from_record) {
+	getM2MRecords : function(tables, from_record) { //server only
 		var results = {};
 		for(var t in tables) {
 			var records = {};
@@ -95,7 +127,7 @@ devTrackServer.prototype = {
 	@param table = string table name or (object of (sys_m2m objects or strings) ).
 	@return GlideRecord of main relationship.
 	*/
-	getMainM2M : function(tables) {
+	getMainM2M : function(tables) { //server only
 		var result = {};
 		if(typeof tables == 'object') {
 			for(var t in tables) result[t] = get(t);
@@ -117,7 +149,7 @@ devTrackServer.prototype = {
 	
 	@return array of action objects taken for what records. [{action:insert_add, record:sys_id, table:tablename}]
 	*/
-	updateMainM2M : function(tables, from, to) {
+	updateMainM2M : function(tables, from, to) { //server only
 		var actions = [];
 		for(var table in tables) {
 			var gr = new GlideRecord(table);
@@ -161,7 +193,7 @@ devTrackServer.prototype = {
 	
 	@return object of sys_m2m objects.
 	*/
-	getM2MTables : function(from_table, to_table, extraCondition, mainTable) {
+	getM2MTables : function(from_table, to_table, extraCondition, mainTable) { //server only
 		var includedFields = ['m2m_table','from_table','m2m_from_field','to_table','m2m_to_field'];
 		var tables = {};
 		var gr = new GlideRecord('sys_m2m');
@@ -181,18 +213,18 @@ devTrackServer.prototype = {
 	},
 
     type: 'devTrackServer'
-};]]></script>
+});]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
         <sys_created_on>2020-05-14 21:59:12</sys_created_on>
         <sys_id>d3045e1507b01010d318fd1e7c1ed08f</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>devTrackServer</sys_name>
         <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
         <sys_update_name>sys_script_include_d3045e1507b01010d318fd1e7c1ed08f</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-15 20:55:03</sys_updated_on>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-17 18:11:37</sys_updated_on>
     </sys_script_include>
 </record_update>

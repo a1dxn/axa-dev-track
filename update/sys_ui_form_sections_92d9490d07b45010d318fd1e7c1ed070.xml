@@ -70,11 +70,39 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2020-05-13 22:51:03</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>Aidan.Lovegrove</sys_created_by>
+            <sys_created_on>2020-05-17 10:05:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>233ecf420774d010d318fd1e7c1ed007</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_417679_devtrack_development" name="x_417679_devtrack_development" sys_domain="global" view="Default view">92d9490d07b45010d318fd1e7c1ed070</sys_ui_form>
+            <sys_ui_section caption="Reporting Fields" display_value="Reporting Fields" name="x_417679_devtrack_development" sys_domain="global" view="Default view">eb3ecf420774d010d318fd1e7c1ed002</sys_ui_section>
+            <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+            <sys_updated_on>2020-05-17 10:05:38</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>Aidan.Lovegrove</sys_created_by>
+            <sys_created_on>2020-05-17 17:01:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>977d68d607f8d010d318fd1e7c1ed09a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_417679_devtrack_development" name="x_417679_devtrack_development" sys_domain="global" view="Default view">92d9490d07b45010d318fd1e7c1ed070</sys_ui_form>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_417679_devtrack_development" sys_domain="global" view="Default view">9f7d28d607f8d010d318fd1e7c1ed0ce</sys_ui_section>
+            <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+            <sys_updated_on>2020-05-17 17:01:46</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_417679_devtrack_development</name>
             <roles/>
             <sys_class_name>sys_ui_form</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
+            <sys_created_by>Aidan.Lovegrove</sys_created_by>
             <sys_created_on>2020-05-13 21:53:16</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
@@ -86,7 +114,7 @@
             <sys_policy/>
             <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
             <sys_update_name>sys_ui_form_sections_92d9490d07b45010d318fd1e7c1ed070</sys_update_name>
-            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
             <sys_updated_on>2020-05-13 21:53:16</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
