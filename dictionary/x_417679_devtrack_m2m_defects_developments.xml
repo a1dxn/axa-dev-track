@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Devtrack M2m Defects Developments" max_length="40" name="x_417679_devtrack_m2m_defects_developments" type="collection">
+        <element attributes="encode_utf8=false" label="Defect" max_length="32" name="defect" reference="rm_defect" type="reference"/>
+        <element attributes="encode_utf8=false" label="Development" max_length="32" name="development" reference="x_417679_devtrack_development" type="reference"/>
+        <element label="Main Relationship" max_length="40" name="main_rel" type="boolean"/>
+        <index name="index">
+            <element name="defect"/>
+        </index>
+        <index name="index2">
+            <element name="development"/>
+        </index>
+    </element>
+</database>

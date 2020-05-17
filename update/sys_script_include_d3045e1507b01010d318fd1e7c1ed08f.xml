@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_417679_devtrack.devTrackServer</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>devTrackServer</name>
+        <script><![CDATA[var devTrackServer = Class.create();
+devTrackServer.prototype = {
+    initialize: function() {
+    },
+	
+	checkNextNumber : function(table,number) {
+		var gr = new GlideRecord(table);
+		gr.addQuery('number='+number);
+		gr.query();
+		if(gr.hasNext()) return this.getNextNumber(table);
+		else return this.checkNumberConformity(table,number);
+	},
+	
+	getNextNumber : function(table, number) {
+		var gr = new GlideRecord(table);
+		gr.orderByDesc('number');
+		gr.query();
+		var n = '1';
+		if(gr.next())
+			n = (parseFloat(gr.getValue('number').replace(/[^0-9]*/,''))+1).toString(); //get number only and add 1
+		
+		return this.checkNumberConformity(table, n);
+	},
+	
+	checkNumberConformity : function(table,number){
+		var pre = new GlideRecord('sys_number');
+		pre.addQuery('category.name='+table);
+		pre.query();
+		if(pre.next()) {
+			var n = number.toString().replace(/[^0-9]*/,''); //
+			for(i=n.length;i<pre.maximum_digits;i++) n = '0'+n;
+			return pre.prefix+n;
+		} else throw 'Unable to check number conformity for table '+table+' and number '+number;
+		
+	},
+	
+	// <report_field_name>: { table:<table name>, fields:<[array of fields to collate]>, format:"<how to print the fields>" }
+	reportFields : {
+		update_sets:{table:'sys_remote_update_set', fields:['name','commit_date'], format:"<name> (Committed On: <commit_date>)"}
+	},
+	
+	/*
+	@param current = GlideRecord of record to update.
+	*/
+	updateReportFields : function(current) {
+		var tables = this.getM2MTables(current.sys_class_name);
+		var tableRecords = this.getM2MRecords(tables, current.sys_id);
+		
+		for(var rField in this.reportFields) { //for each report field
+			current[rField] = ''; //reset current record field value
+			for(var record in tableRecords[this.reportFields[rField].table]) { //for each related record in table
+				var print = this.reportFields[rField].format; //set format
+				for(var i=0;i<this.reportFields[rField].fields.length;i++) {
+					//insert related record field value into format
+					var field2find = "<"+this.reportFields[rField].fields[i]+">";
+					var fieldval =  tableRecords[this.reportFields[rField].table][record][this.reportFields[rField].fields[i]];
+					print = print.replace(field2find, fieldval); 
+				}
+				current[rField] += print+"\n";
+			}
+		}
+		return current;
+	},
+	
+	/*
+	@param tables = object of sys_m2m objects.
+	@return object of tables of records. {table1:[record1:GlideRecord, record2:GlideRecord]}
+	*/
+	getM2MRecords : function(tables, from_record) {
+		var results = {};
+		for(var t in tables) {
+			var records = {};
+			var gr = new GlideRecord(t);
+			gr.addQuery(tables[t].m2m_from_field+'='+from_record);
+			gr.query();
+			while(gr.next()) {
+				var gr2 = new GlideRecord(tables[t].to_table);
+				if(gr2.get(gr.getValue(tables[t].m2m_to_field))) records[gr.getValue('sys_id')] = gr2;
+			}
+			results[tables[t].to_table] = records;
+		}
+		return results;
+	},
+	
+	/*
+	@param table = string table name or (object of (sys_m2m objects or strings) ).
+	@return GlideRecord of main relationship.
+	*/
+	getMainM2M : function(tables) {
+		var result = {};
+		if(typeof tables == 'object') {
+			for(var t in tables) result[t] = get(t);
+		} else if(typeof tables == 'string') return get(tables);
+			
+		function get(table) {
+			var gr = new GlideRecord(table);
+			gr.addQuery('main_rel=true');
+			gr.query();
+			if(gr.next()) return gr;
+			else return null;
+		}
+	},
+	
+	/*
+	@param tables = object of sys_m2m objects. add main_table = true to main table object were main rel is.
+	@param from = string sys_id of from record (usually current.sys_id).
+	@param to = string sys_id of main record to create relationship for.
+	
+	@return array of action objects taken for what records. [{action:insert_add, record:sys_id, table:tablename}]
+	*/
+	updateMainM2M : function(tables, from, to) {
+		var actions = [];
+		for(var table in tables) {
+			var gr = new GlideRecord(table);
+
+			//create new main relationship if it is correct table
+			if(tables[table].main_table==true) { 
+				gr.addQuery(tables[table].m2m_from_field+'='+from+'^'+tables[table].m2m_to_field+'='+to);
+				gr.query();
+				if(gr.next()) {
+					gr.main_rel = true;
+					actions.push({action:'update_add', record: gr.update(), table:table});
+				} else {
+					gr.initialize();
+					gr[tables[table].m2m_from_field] = from;
+					gr[tables[table].m2m_to_field] = to;
+					gr.main_rel = true;
+					actions.push({action:'insert_add', record: gr.insert(), table:table});
+				}
+				gr = new GlideRecord(table); //clear previous query
+			}
+			//clear other main rels
+			gr.addQuery(tables[table].m2m_from_field+'='+from+'^main_rel=true'
+						+(tables[table].main_table==true ? '^'+tables[table].m2m_to_field+'!='+to : ''));
+			gr.query();
+			while(gr.next()) {
+				gr.setValue('main_rel', false);
+				actions.push({action:'update_remove', record: gr.update(), table:table});
+			}
+		}
+		return actions;
+	},
+	
+	//list of related record tables
+	relatedRecordM2Ms : 'incident,sc_req_item,change_request,problem,rm_defect',
+	
+	/*
+	@param from_table = string name of from table.
+	@param to_table = string name of to table or NULL.
+	@param extraCondition = extra condition added to query or NULL.
+	@param mainTable = (Conditional) if no to_table specified, specify a mainTable which holds the main relationship.
+	
+	@return object of sys_m2m objects.
+	*/
+	getM2MTables : function(from_table, to_table, extraCondition, mainTable) {
+		var includedFields = ['m2m_table','from_table','m2m_from_field','to_table','m2m_to_field'];
+		var tables = {};
+		var gr = new GlideRecord('sys_m2m');
+		gr.addQuery('from_table='+from_table
+					+(to_table!=null ? '^to_table='+to_table : '')
+					+(extraCondition!=null ? '^'+extraCondition : ''));
+		gr.query();
+		while(gr.next()) {
+			var t = gr.getValue('m2m_table');
+			tables[t] = {};
+			includedFields.forEach(function(f,i){
+				tables[t][f] = gr.getValue(f);
+			});
+			tables[t].main_table = (tables[t].to_table==to_table||(tables[t].to_table==mainTable) ? true : false);
+		}
+		return tables;
+	},
+
+    type: 'devTrackServer'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-14 21:59:12</sys_created_on>
+        <sys_id>d3045e1507b01010d318fd1e7c1ed08f</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>devTrackServer</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_script_include_d3045e1507b01010d318fd1e7c1ed08f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 20:55:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

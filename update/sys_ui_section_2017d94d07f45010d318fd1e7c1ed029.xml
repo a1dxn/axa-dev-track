@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Development Details" section_id="2017d94d07f45010d318fd1e7c1ed029" sys_domain="global" table="x_417679_devtrack_development" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dev_impact</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:48:45</sys_created_on>
+            <sys_id>ce4469cd07385010d318fd1e7c1ed0b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Development Details" display_value="Development Details" name="x_417679_devtrack_development" sys_domain="global" view="Default view">2017d94d07f45010d318fd1e7c1ed029</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>solution</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:48:45</sys_created_on>
+            <sys_id>424469cd07385010d318fd1e7c1ed0ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Development Details" display_value="Development Details" name="x_417679_devtrack_development" sys_domain="global" view="Default view">2017d94d07f45010d318fd1e7c1ed029</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actions</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:48:45</sys_created_on>
+            <sys_id>c24469cd07385010d318fd1e7c1ed0ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Development Details" display_value="Development Details" name="x_417679_devtrack_development" sys_domain="global" view="Default view">2017d94d07f45010d318fd1e7c1ed029</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>update_sets</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:48:45</sys_created_on>
+            <sys_id>464469cd07385010d318fd1e7c1ed0ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Development Details" display_value="Development Details" name="x_417679_devtrack_development" sys_domain="global" view="Default view">2017d94d07f45010d318fd1e7c1ed029</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:48:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Development Details</caption>
+            <header>false</header>
+            <name>x_417679_devtrack_development</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:51:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2017d94d07f45010d318fd1e7c1ed029</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Development Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+            <sys_update_name>sys_ui_section_2017d94d07f45010d318fd1e7c1ed029</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:51:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Development Feedback</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Development Feedback</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">13f78695983100107f2c2ed01a1f167a</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:26:42</sys_created_on>
+        <sys_id>723f110907385010d318fd1e7c1ed046</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Development Feedback</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_wizard_answer_723f110907385010d318fd1e7c1ed046</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:26:42</sys_updated_on>
+        <table/>
+        <target_url>x_417679_devtrack_feedback.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_wizard_answer_723f110907385010d318fd1e7c1ed046</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Development Feedback</answer><button_label/><dependent_value/><element/><name>Development Feedback</name><next_question/><order>100</order><payload_name/><question display_value="Task" name="Task">13f78695983100107f2c2ed01a1f167a</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:26:42</sys_created_on><sys_id>723f110907385010d318fd1e7c1ed046</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Development Feedback</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_wizard_answer_723f110907385010d318fd1e7c1ed046</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:26:42</sys_updated_on><table/><target_url>x_417679_devtrack_feedback.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>2070901249</payload_hash>
+        <record_name>Development Feedback</record_name>
+        <reverted_from/>
+        <source>58e27a7307201010d318fd1e7c1ed063</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2020-05-10 08:19:45</sys_created_on>
+        <sys_id>c3ef2a6507345010d318fd1e7c1ed0f8</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>171fdab28e80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>83ef2a65f23450105c520201bde8bcf8</update_guid>
+        <update_guid_history>83ef2a65f23450105c520201bde8bcf8:2070901249</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 18:36:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>2d0ee8c717ed4ea09db2168a1304a900</sys_id>
+        <sys_metadata>723f110907385010d318fd1e7c1ed046</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Development Feedback</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent display_value="Task">13f78695983100107f2c2ed01a1f167a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_723f110907385010d318fd1e7c1ed046</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_723f110907385010d318fd1e7c1ed046">c3ef2a6507345010d318fd1e7c1ed0f8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 18:36:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

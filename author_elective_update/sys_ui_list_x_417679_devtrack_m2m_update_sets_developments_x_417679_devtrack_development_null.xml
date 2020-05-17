@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="x_417679_devtrack_development" relationship="" sys_domain="global" table="x_417679_devtrack_m2m_update_sets_developments" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>development</element>
+            <list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_id>8eec190507385010d318fd1e7c1ed0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>update_set</element>
+            <list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_id>02ec190507385010d318fd1e7c1ed0d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>update_set.state</element>
+            <list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_id>82ec190507385010d318fd1e7c1ed0d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>update_set.parent</element>
+            <list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_id>06ec190507385010d318fd1e7c1ed0d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>update_set.sys_created_on</element>
+            <list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_id>86ec190507385010d318fd1e7c1ed0d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>update_set.completed_on</element>
+            <list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_id>0aec190507385010d318fd1e7c1ed0d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_417679_devtrack_m2m_update_sets_developments</name>
+            <parent>x_417679_devtrack_development</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06ec190507385010d318fd1e7c1ed0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_417679_devtrack_m2m_update_sets_developments</sys_name>
+            <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+            <sys_update_name>sys_ui_list_x_417679_devtrack_m2m_update_sets_developments_x_417679_devtrack_development_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_ui_list_x_417679_devtrack_m2m_update_sets_developments_x_417679_devtrack_development_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="x_417679_devtrack_development" relationship="" sys_domain="global" table="x_417679_devtrack_m2m_update_sets_developments" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>development</element><list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_id>8eec190507385010d318fd1e7c1ed0d5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>update_set</element><list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_id>02ec190507385010d318fd1e7c1ed0d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>update_set.state</element><list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_id>82ec190507385010d318fd1e7c1ed0d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>update_set.parent</element><list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_id>06ec190507385010d318fd1e7c1ed0d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>update_set.sys_created_on</element><list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_id>86ec190507385010d318fd1e7c1ed0d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>update_set.completed_on</element><list_id display_value="x_417679_devtrack_m2m_update_sets_developments" element="NULL" name="x_417679_devtrack_m2m_update_sets_developments" parent="x_417679_devtrack_development" relationship="NULL" sys_domain="global" view="Default view">06ec190507385010d318fd1e7c1ed0d5</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_id>0aec190507385010d318fd1e7c1ed0d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_417679_devtrack_m2m_update_sets_developments</name><parent>x_417679_devtrack_development</parent><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:16:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>06ec190507385010d318fd1e7c1ed0d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack_m2m_update_sets_developments</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_ui_list_x_417679_devtrack_m2m_update_sets_developments_x_417679_devtrack_development_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:16:32</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>-1299986804</payload_hash>
+        <record_name>Development.Devtrack M2m Update Sets Developments</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:16:32</sys_created_on>
+        <sys_id>caec190507385010d318fd1e7c1ed0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1721053477c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:16:32</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>46ec1905e4385010607bd73b0a41cdd8</update_guid>
+        <update_guid_history>46ec1905e4385010607bd73b0a41cdd8:-1299986804</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 15:56:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>0a690abe0ea148788087ba1d86de9240</sys_id>
+        <sys_metadata>06ec190507385010d318fd1e7c1ed0d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_update_sets_developments</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent display_value="">3e0b918107385010d318fd1e7c1ed046</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_417679_devtrack_m2m_update_sets_developments_x_417679_devtrack_development_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_417679_devtrack_m2m_update_sets_developments_x_417679_devtrack_development_null">caec190507385010d318fd1e7c1ed0d8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 15:56:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

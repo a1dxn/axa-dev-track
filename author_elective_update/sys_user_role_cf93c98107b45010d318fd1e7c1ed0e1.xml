@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_417679_devtrack.sn_module_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>sn_module_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 21:26:01</sys_created_on>
+        <sys_id>cf93c98107b45010d318fd1e7c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack.sn_module_user</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_user_role_cf93c98107b45010d318fd1e7c1ed0e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 21:26:01</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_user_role_cf93c98107b45010d318fd1e7c1ed0e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_417679_devtrack.sn_module_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>sn_module_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 21:26:01</sys_created_on><sys_id>cf93c98107b45010d318fd1e7c1ed0e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack.sn_module_user</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_user_role_cf93c98107b45010d318fd1e7c1ed0e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 21:26:01</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1554055044</payload_hash>
+        <record_name>x_417679_devtrack.sn_module_user</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 21:26:01</sys_created_on>
+        <sys_id>8b93c98107b45010d318fd1e7c1ed0e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1720fee16ed0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 21:26:01</sys_updated_on>
+        <type>Role</type>
+        <update_guid>c393c98147b45010f956c1d196957be6</update_guid>
+        <update_guid_history>c393c98147b45010f956c1d196957be6:1554055044</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_417679_devtrack.sn_module_user">07b36d8d07385010d318fd1e7c1ed091</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:46:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>1e570d5248324dac91caba4491eaab10</sys_id>
+        <sys_metadata>cf93c98107b45010d318fd1e7c1ed0e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack.sn_module_user</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_user_role_cf93c98107b45010d318fd1e7c1ed0e1</sys_update_name>
+        <sys_update_version display_value="sys_user_role_cf93c98107b45010d318fd1e7c1ed0e1">8b93c98107b45010d318fd1e7c1ed0e6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:46:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

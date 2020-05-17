@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="raised_from_table" label="Raised From Table" language="en" table="x_417679_devtrack_development">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>raised_from_table</element>
+            <help/>
+            <hint/>
+            <label>Raised From Table</label>
+            <language>en</language>
+            <name>x_417679_devtrack_development</name>
+            <plural>Raised From Tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:34:53</sys_created_on>
+            <sys_id>bb53194907f45010d318fd1e7c1ed011</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Raised From Table</sys_name>
+            <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+            <sys_update_name>sys_documentation_x_417679_devtrack_development_raised_from_table_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:45:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

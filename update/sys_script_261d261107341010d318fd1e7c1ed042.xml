@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_417679_devtrack_development</collection>
+        <condition>current.raised_from.changes() || (!current.raised_from.changes() &amp;&amp; current.raised_from_table.changes())</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Raised From Related Record</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if(!current.raised_from.changes() && current.raised_from_table.changes()) {
+		current.raised_from_table = previous.raised_from_table;
+		return;
+	}
+
+	var dt = new devTrackServer();
+	var tables = dt.getM2MTables(current.getTableName(), null, 'to_tableIN'+dt.relatedRecordM2Ms, current.raised_from_table);
+	var response = dt.updateMainM2M(tables, current.sys_id, current.raised_from);
+	
+	var msg = 'The Raised From record has been related to this development, see appropriate related list.';
+	//if any main rel flags were removed
+	if(response.some(function(r){return r.action=="update_remove"?true:false;})) {
+		msg += ' The previous relationship will not be removed from the related list.';
+	}
+	gs.addInfoMessage(msg);
+	
+	
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 00:11:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>261d261107341010d318fd1e7c1ed042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Raised From Related Record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_script_261d261107341010d318fd1e7c1ed042</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 00:11:03</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=261d261107341010d318fd1e7c1ed042"/>
+</record_update>

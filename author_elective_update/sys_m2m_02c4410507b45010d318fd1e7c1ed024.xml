@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="DELETE">
+        <from_table>x_417679_devtrack_sn_module</from_table>
+        <m2m_from_field>sn_module</m2m_from_field>
+        <m2m_from_label>Module</m2m_from_label>
+        <m2m_table>x_417679_devtrack_m2m_sn_modules_groups</m2m_table>
+        <m2m_to_field>group</m2m_to_field>
+        <m2m_to_label>Group</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 21:32:20</sys_created_on>
+        <sys_id>02c4410507b45010d318fd1e7c1ed024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_sn_modules_groups</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_m2m_02c4410507b45010d318fd1e7c1ed024</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 21:32:20</sys_updated_on>
+        <to_table>sys_user_group</to_table>
+    </sys_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_m2m_02c4410507b45010d318fd1e7c1ed024</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m"><sys_m2m action="INSERT_OR_UPDATE"><from_table>x_417679_devtrack_sn_module</from_table><m2m_from_field>sn_module</m2m_from_field><m2m_from_label>Module</m2m_from_label><m2m_table>x_417679_devtrack_m2m_sn_modules_groups</m2m_table><m2m_to_field>group</m2m_to_field><m2m_to_label>Group</m2m_to_label><sys_class_name>sys_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 21:32:20</sys_created_on><sys_id>02c4410507b45010d318fd1e7c1ed024</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack_m2m_sn_modules_groups</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_m2m_02c4410507b45010d318fd1e7c1ed024</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 21:32:20</sys_updated_on><to_table>sys_user_group</to_table></sys_m2m></record_update>]]></payload>
+        <payload_hash>-1790744755</payload_hash>
+        <record_name>x_417679_devtrack_m2m_sn_modules_groups</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 21:32:21</sys_created_on>
+        <sys_id>7b05454507b45010d318fd1e7c1ed05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1720ff3e3b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 21:32:21</sys_updated_on>
+        <type>Many to Many Definition</type>
+        <update_guid>b305454535b45010245cec2860d3465f</update_guid>
+        <update_guid_history>b305454535b45010245cec2860d3465f:-1790744755</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 22:15:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_m2m">sys_m2m</sys_db_object>
+        <sys_id>38de15fe99c546d498be202e281ab3a4</sys_id>
+        <sys_metadata>02c4410507b45010d318fd1e7c1ed024</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_sn_modules_groups</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_m2m_02c4410507b45010d318fd1e7c1ed024</sys_update_name>
+        <sys_update_version display_value="sys_m2m_02c4410507b45010d318fd1e7c1ed024">7b05454507b45010d318fd1e7c1ed05f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 22:15:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

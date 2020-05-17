@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="f071c9cd07745010d318fd1e7c1ed0cc" sys_domain="global" table="x_417679_devtrack_development" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>b128dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>main_module</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>3528dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>b528dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>3928dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>b928dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>3d28dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>bd28dd8d07f45010d318fd1e7c1ed051</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>3128dd8d07f45010d318fd1e7c1ed052</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>b128dd8d07f45010d318fd1e7c1ed052</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+            <sys_id>3528dd8d07f45010d318fd1e7c1ed052</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_417679_devtrack_development</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-13 21:16:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f071c9cd07745010d318fd1e7c1ed0cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_417679_devtrack_development</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+            <sys_update_name>sys_ui_section_f071c9cd07745010d318fd1e7c1ed0cc</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-13 21:16:34</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_ui_section_f071c9cd07745010d318fd1e7c1ed0cc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="f071c9cd07745010d318fd1e7c1ed0cc" sys_domain="global" table="x_417679_devtrack_development" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>b128dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>main_module</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>3528dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignment_group</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>b528dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>3928dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>b928dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>3d28dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>state</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>bd28dd8d07f45010d318fd1e7c1ed051</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>3128dd8d07f45010d318fd1e7c1ed052</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>parent</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>b128dd8d07f45010d318fd1e7c1ed052</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>active</element><position>9</position><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 22:55:46</sys_created_on><sys_id>3528dd8d07f45010d318fd1e7c1ed052</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_417679_devtrack_development" sys_domain="global" view="Default view">f071c9cd07745010d318fd1e7c1ed0cc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 22:55:46</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_417679_devtrack_development</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 21:16:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f071c9cd07745010d318fd1e7c1ed0cc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack_development</sys_name><sys_overrides/><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_ui_section_f071c9cd07745010d318fd1e7c1ed0cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 21:16:34</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>713495700</payload_hash>
+        <record_name>Development</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 22:55:46</sys_created_on>
+        <sys_id>b128dd8d07f45010d318fd1e7c1ed054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172104043580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 22:55:46</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>3d28dd8dbff45010d1a7e9ae8d059053</update_guid>
+        <update_guid_history>3d28dd8dbff45010d1a7e9ae8d059053:713495700,f017d94d8ff4501034e3158c0c30fa73:-1070407265,90f2114947f45010421906c56e4e78c1:1515689977,2ea2d90968f45010c91373f74f93a963:1027136363,d7821909b2f45010e455c7bf6f47a1d4:169712300,68621509f7f4501042060c78dafc77dd:1515689977,694dcd0121f45010584567b63b42ddc1:852782433,83ec8dcd00b450104a95f113ec1805c3:-959094465,646cc9cdc7b45010b924503cc5c2814c:-189637327,dd3cc5cdc3b45010372b6466a042cc5b:852782433,5f8b8d4d57b45010f29db344cd503044:-1842044667,163b458d77b45010bf88fc597ca020c8:852782433,d1aac90d34b4501078bac6be405c9cff:-662735027,695a814d8bb450102418788cdbe63365:852782433,6ad9490d0fb45010a46fc714a0493bad:212764128,fb68c98902b45010d0d3cef2e64e7b65:912363038,78a145418eb45010c445516b020b29ae:-1166089436,b0a14541ddb45010e071d644feca08a8:1816772942</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:02:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>1b5cb7ac0faa49be849276d42b212724</sys_id>
+        <sys_metadata>f071c9cd07745010d318fd1e7c1ed0cc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_development</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent display_value="Development">0910418d07745010d318fd1e7c1ed03a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_ui_section_f071c9cd07745010d318fd1e7c1ed0cc</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_f071c9cd07745010d318fd1e7c1ed0cc">b128dd8d07f45010d318fd1e7c1ed054</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:02:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

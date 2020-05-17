@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="INSERT_OR_UPDATE">
+        <from_table>x_417679_devtrack_development</from_table>
+        <m2m_from_field>development</m2m_from_field>
+        <m2m_from_label>Defects</m2m_from_label>
+        <m2m_table>x_417679_devtrack_m2m_defects_developments</m2m_table>
+        <m2m_to_field>defect</m2m_to_field>
+        <m2m_to_label>Developments</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:06:27</sys_created_on>
+        <sys_id>6a7a5d4107385010d318fd1e7c1ed0e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_defects_developments</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_m2m_6a7a5d4107385010d318fd1e7c1ed0e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:06:27</sys_updated_on>
+        <to_table>rm_defect</to_table>
+    </sys_m2m>
+</record_update>

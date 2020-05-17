@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_417679_devtrack_dev_testing_task">x_417679_devtrack_dev_testing_task</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>DTEST</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 18:40:32</sys_created_on>
+        <sys_id>e6e0baa507345010d318fd1e7c1ed03a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DTEST</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_number_e6e0baa507345010d318fd1e7c1ed03a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 18:40:32</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_number_e6e0baa507345010d318fd1e7c1ed03a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_417679_devtrack_dev_testing_task">x_417679_devtrack_dev_testing_task</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>DTEST</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-15 18:40:32</sys_created_on><sys_id>e6e0baa507345010d318fd1e7c1ed03a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DTEST</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_number_e6e0baa507345010d318fd1e7c1ed03a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-15 18:40:32</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-1401253177</payload_hash>
+        <record_name>DTEST</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 18:40:32</sys_created_on>
+        <sys_id>e2e0baa507345010d318fd1e7c1ed042</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17219a34f440000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 18:40:32</sys_updated_on>
+        <type>Number</type>
+        <update_guid>2ee0baa566345010bef93461b441c841</update_guid>
+        <update_guid_history>2ee0baa566345010bef93461b441c841:-1401253177</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-15 18:41:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>20ca42fb79234ec0a575dfd92acf8100</sys_id>
+        <sys_metadata>e6e0baa507345010d318fd1e7c1ed03a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DTEST</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent display_value="">9c907a2507345010d318fd1e7c1ed015</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_number_e6e0baa507345010d318fd1e7c1ed03a</sys_update_name>
+        <sys_update_version display_value="sys_number_e6e0baa507345010d318fd1e7c1ed03a">e2e0baa507345010d318fd1e7c1ed042</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-15 18:41:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

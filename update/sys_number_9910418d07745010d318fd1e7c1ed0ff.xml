@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
     <sys_number action="INSERT_OR_UPDATE">
         <category display_value="" name="x_417679_devtrack_development">x_417679_devtrack_development</category>
-        <maximum_digits>7</maximum_digits>
+        <maximum_digits>4</maximum_digits>
         <number>0</number>
         <prefix>DEV</prefix>
         <sys_class_name>sys_number</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-05-13 21:10:36</sys_created_on>
         <sys_id>9910418d07745010d318fd1e7c1ed0ff</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>DEV</sys_name>
         <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
         <sys_update_name>sys_number_9910418d07745010d318fd1e7c1ed0ff</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-05-13 21:10:36</sys_updated_on>
+        <sys_updated_on>2020-05-17 09:28:40</sys_updated_on>
     </sys_number>
 </record_update>
