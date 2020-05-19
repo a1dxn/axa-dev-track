@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System (glidesoft)" source="glidesoft">a1570e11983100107f2c2ed01a1f16f5</dependency>
+        <min_version/>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-19 19:25:39</sys_created_on>
+        <sys_id>2291ab3a07b49410d318fd1e7c1ed0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-19 19:25:39</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

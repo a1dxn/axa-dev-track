@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Create Dev Testing Tasks">654ad5d607bcd010d318fd1e7c1ed0ca</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-17 20:25:24</sys_created_on>
+        <sys_id>4a1cd55a07bcd010d318fd1e7c1ed08f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Dev Testing Task.Create Additional Dev Testing Task</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>io_set_item_4a1cd55a07bcd010d318fd1e7c1ed08f</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-17 20:25:24</sys_updated_on>
+        <variable_set display_value="Testing Tasks">2a8bdd1a07bcd010d318fd1e7c1ed0fd</variable_set>
+    </io_set_item>
+</record_update>

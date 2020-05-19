@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_417679_devtrack_development</collection>
-        <condition>current.raised_from.changes() || (!current.raised_from.changes() &amp;&amp; current.raised_from_table.changes())</condition>
+        <condition>current.raised_from.changes()</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -29,24 +29,23 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	if(!current.raised_from.changes() && current.raised_from_table.changes()) {
-		current.raised_from_table = previous.raised_from_table;
-		return;
-	}
-
 	var dt = new devTrackServer();
-	var tables = dt.getM2MTables(current.getTableName(), null, 'to_tableIN'+dt.relatedRecordM2Ms, current.raised_from_table);
+	var tables = dt.getM2MTables(current.getTableName(), 'task');
 	var response = dt.updateMainM2M(tables, current.sys_id, current.raised_from);
 	
-	var msg = 'The Raised From record has been related to this development, see appropriate related list.';
+	var msg = '';
+	
+	//if any were added
+	if(response.some(function(r){return r.action!="update_remove"?true:false;})) {
+		msg = 'The Raised From record has been related to this development - see the Related Tasks list.';
+	}
+	
 	//if any main rel flags were removed
 	if(response.some(function(r){return r.action=="update_remove"?true:false;})) {
 		msg += ' The previous relationship will not be removed from the related list.';
 	}
-	gs.addInfoMessage(msg);
 	
-	
-	
+	if(msg!='') gs.addInfoMessage(msg);
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -55,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>261d261107341010d318fd1e7c1ed042</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Update Raised From Related Record</sys_name>
         <sys_overrides/>
         <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
@@ -63,7 +62,7 @@
         <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
         <sys_update_name>sys_script_261d261107341010d318fd1e7c1ed042</sys_update_name>
         <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
-        <sys_updated_on>2020-05-17 16:20:18</sys_updated_on>
+        <sys_updated_on>2020-05-18 15:23:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

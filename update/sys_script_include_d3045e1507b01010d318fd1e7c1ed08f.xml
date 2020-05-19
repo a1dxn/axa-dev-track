@@ -10,6 +10,145 @@
         <script><![CDATA[var devTrackServer = Class.create();
 devTrackServer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
+	setDevTesting : function(d, action, update) {
+		if(d==null||action==null) throw '[devTrackServer.setDevTesting] parameter "d" or "action" is null';
+		
+		this.getTesters(d).forEach(function(user,i){
+			if(action) this.addTester(d,user,true);
+			else this.removeTester(d,user,true);
+		});
+		
+		if(update==null || update==true) {
+			var dev = new GlideRecord('x_417679_devtrack_development');
+			if(dev.get(d)) {
+				dev.feedback_state = action==true ? 'open' : 'closed';
+				dev.update();
+			}
+		} else throw '[devTrackServer.setDevTesting] couldnt get development record '+d;
+		
+		var tasks = new GlideRecord('x_417679_devtrack_test');
+		tasks.addQuery('development='+d+'^state=-5');
+		tasks.setValue('active',true);
+		tasks.setValue('state',gs.getProperty('x_417679_devtrack.default_test_task_open_state'));
+		tasks.updateMultiple();
+		return action;
+	},
+	
+	isDevTesting : function(d) {
+		var dev = new GlideRecord('x_417679_devtrack_development');
+		if(!dev.get(d)) throw '[devTrackServer.isDevTesting] couldnt get development record '+d;
+		return dev.feedback_state=='open' ? true : false;
+	},
+	
+	getTesters : function(d) {
+		var testers = [];
+		var gr = new GlideRecord('x_417679_devtrack_testers');
+		gr.addQuery('development='+d);
+		gr.query();
+		while(gr.next()) testers.push(gr.getValue('user'));
+		return testers;
+	},
+	
+	isTester : function(d, u) {
+		var dev = d || this.getParameter('sysparm_dev');
+		var user = u || this.getParameter('sysparm_user');
+		
+		var gr = new GlideRecord('x_417679_devtrack_testers');
+		gr.addQuery('development='+dev+'^user='+user);
+		gr.query();
+		return gr.hasNext();
+	},
+	
+	hasTested : function(d, u) {
+		var dev = d || this.getParameter('sysparm_dev');
+		var user = u || this.getParameter('sysparm_user');
+		
+		var gr = new GlideRecord('x_417679_devtrack_test');
+		gr.addQuery('development='+dev+'^assigned_to='+user);
+		gr.query();
+		return gr.hasNext();
+	},
+	
+	addTester : function(d, u, fromRL) {
+		var dev = d || this.getParameter('sysparm_dev');
+		var user = u || this.getParameter('sysparm_user');
+		
+		if(fromRL==null || fromRL==false) {
+			var gr = new GlideRecord('x_417679_devtrack_testers');
+			gr.addQuery('development='+dev+'^user='+user);
+			gr.query();
+			if(!gr.hasNext()) {
+				gr.initialize();
+				gr.development = dev;
+				gr.user = user;
+				gr.insert();
+			}
+		}
+		
+		if(this.isDevTesting(dev)) {
+			var gm = new GlideRecord('sys_user_grmember');
+			gr.addQuery('group='+devGroup+'^user='+user);
+			gr.query();
+			if(!gr.hasNext()) {
+				gr.initialize();
+				gr.group = this.getFeedbackGroup(dev);
+				gr.user = user;
+				gr.insert();
+			}
+		}
+	},
+	
+	removeTester : function(d, u, fromRL) {
+		var dev = d || this.getParameter('sysparm_dev');
+		var user = u || this.getParameter('sysparm_user');
+		
+		if(fromRL==null || fromRL==false) {
+			var gr = new GlideRecord('x_417679_devtrack_testers');
+			gr.addQuery('development='+dev+'^user='+user);
+			gr.query();
+			if(gr.next()) gr.deleteRecord();
+		}
+		
+		var gm = new GlideRecord('sys_user_grmember');
+		gr.addQuery('group='+devGroup+'^user='+user);
+		gr.query();
+		if(gr.next()) gr.deleteRecord();
+	},
+	
+	getFeedbackGroup : function(d) {
+		var dev = new GlideRecord('x_417679_devtrack_development');
+		if(!dev.get(d)) throw '[devTrackServer.getFeedbackGroup] couldnt find development '+d;
+		
+		if(dev.feedback_group!=null && dev.feedback_group!='') return dev.getValue('feedback_group');
+		else {
+			var name = gs.getProperty('x_417679_devtrack.group_name_format');
+			name.match(/\$[a-z0-9_]+/gi).forEach(function(field, i){
+				name = name.replace(field,dev[field.substring(1)]);
+			});
+			
+			var g = new GlideRecord('x_417679_devtrack_user_group');
+			g.initialize();
+			g.name = name;
+			g.parent = '8fe86d9607fcd010d318fd1e7c1ed002';
+			g.type = 'fc27ad1607fcd010d318fd1e7c1ed000';
+			var group = g.insert();
+			dev.feedback_group = group;
+			dev.update();
+			return group;
+		}
+	},
+	
+	getRelatedTaskTables : function() {
+		return Object.keys(this.getTaskTablesPropertyObject()).toString();
+	},
+	
+	getTaskTablesPropertyObject : function() {
+		var prop = gs.getProperty('x_417679_devtrack.related_task_tables');
+		prop = prop.replace(/'/g,'"');
+		prop = prop.replace(/ /g,'');
+		return JSON.parse("{"+prop+"}");
+	},
+	
 	getRecordLink : function(t,r) { //server and client
 		var table = t || this.getParameter('sysparm_table');
 		var record = r || this.getParameter('sysparm_record');
@@ -18,7 +157,6 @@ devTrackServer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		
 		var gr = new GlideRecord(table);
 		if(gr.get(record)) {
-			
 			print = print.replace('$Number', gr.getDisplayValue());
 			print = print.replace('$link', gr.getTableName()+".do?sys_id="+gr.sys_id);
 			return print;
@@ -26,21 +164,30 @@ devTrackServer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		return '';
 	},
 	
-	getRaisedInfo : function(t, r) {
-		var table = t || this.getParameter('sysparm_table');
+	getRaisedInfo : function(r) { //server and client
 		var record = r || this.getParameter('sysparm_record');
 		var result = {raised_by:'', raised_on:''};
 		
-		var gr = new GlideRecord(table);
-		if(gr.get(record)) {
+		var gr = this.getExtGR('task', record);
+		if(gr!=null) {
 			result.raised_on = gr.getValue('sys_created_on');
-			var choice = 'sys_opened_by';
-			if(table=='sc_req_item') choice = 'requested_for';
-			else if(table=='incident') choice = 'caller_id';
-			else if(table=='change_request') choice = 'requested_by';
-			result.raised_by = gr.getValue(choice);
+			var field = this.getTaskTablesPropertyObject()[gr.getRecordClassName()];
+			result.raised_by = gr.getValue(field!=null ? field : 'sys_opened_by');
+			return record==r ? result : JSON.stringify(result);
 		}
-		return table==t ? result : JSON.stringify(result);
+		
+	},
+	
+	getExtGR : function(bt, r) {
+		var base = new GlideRecord(bt);
+		if(base.get(r)) {
+			var klass = base.getRecordClassName();
+			if(klass!=bt) {
+				var g2 = new GlideRecord(klass);
+				if(g2.get(r)) return g2;
+				else throw '[devTrackServer.getExtGR] couldnt find record on extended '+klass;
+			} return base;
+		} else throw '[devTrackServer.getExtGR] couldnt find record on base '+bt;
 	},
 	
 	checkNextNumber : function(table,number) { //server only
@@ -218,13 +365,13 @@ devTrackServer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>Aidan.Lovegrove</sys_created_by>
         <sys_created_on>2020-05-14 21:59:12</sys_created_on>
         <sys_id>d3045e1507b01010d318fd1e7c1ed08f</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>75</sys_mod_count>
         <sys_name>devTrackServer</sys_name>
         <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
         <sys_update_name>sys_script_include_d3045e1507b01010d318fd1e7c1ed08f</sys_update_name>
         <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
-        <sys_updated_on>2020-05-17 18:11:37</sys_updated_on>
+        <sys_updated_on>2020-05-19 22:07:59</sys_updated_on>
     </sys_script_include>
 </record_update>

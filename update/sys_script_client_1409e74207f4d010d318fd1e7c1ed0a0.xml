@@ -15,7 +15,6 @@
 
 	var ga = new GlideAjax('devTrackServer');
     ga.addParam('sysparm_name', 'getRaisedInfo');
-    ga.addParam('sysparm_table', g_form.getValue('raised_from_table'));
 	ga.addParam('sysparm_record', newValue);
     ga.getXML(function(response){
 		var r = JSON.parse(response.responseXML.documentElement.getAttribute("answer"));
@@ -37,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1409e74207f4d010d318fd1e7c1ed0a0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Fetch Raised Info</sys_name>
         <sys_overrides/>
         <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
@@ -45,7 +44,7 @@
         <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
         <sys_update_name>sys_script_client_1409e74207f4d010d318fd1e7c1ed0a0</sys_update_name>
         <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
-        <sys_updated_on>2020-05-17 12:42:12</sys_updated_on>
+        <sys_updated_on>2020-05-18 10:44:57</sys_updated_on>
         <table>x_417679_devtrack_development</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>false</advanced>
+        <condition table="x_417679_devtrack_m2m_chg_developments">main_rel=false^EQ<item endquery="false" field="main_rel" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description>Can only delete when not main module</description>
+        <name>x_417679_devtrack_m2m_chg_developments</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-17 16:39:46</sys_created_on>
+        <sys_id>c578245207f8d010d318fd1e7c1ed090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_chg_developments</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_security_acl_c578245207f8d010d318fd1e7c1ed090</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-17 16:39:46</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_security_acl_c578245207f8d010d318fd1e7c1ed090</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>false</admin_overrides><advanced>false</advanced><condition table="x_417679_devtrack_m2m_chg_developments">main_rel=false^EQ<item endquery="false" field="main_rel" goto="false" newquery="false" operator="=" or="false" value="false"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description>Can only delete when not main module</description><name>x_417679_devtrack_m2m_chg_developments</name><operation display_value="delete">delete</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>Aidan.Lovegrove</sys_created_by><sys_created_on>2020-05-17 16:39:46</sys_created_on><sys_id>c578245207f8d010d318fd1e7c1ed090</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack_m2m_chg_developments</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_security_acl_c578245207f8d010d318fd1e7c1ed090</sys_update_name><sys_updated_by>Aidan.Lovegrove</sys_updated_by><sys_updated_on>2020-05-17 16:39:46</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-876078569</payload_hash>
+        <record_name>x_417679_devtrack_m2m_chg_developments</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-17 16:39:46</sys_created_on>
+        <sys_id>0978245207f8d010d318fd1e7c1ed094</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172238176c00000001</sys_recorded_at>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-17 16:39:46</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>41782452cdf8d010005cda9f00318394</update_guid>
+        <update_guid_history>41782452cdf8d010005cda9f00318394:-876078569</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 15:09:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>3a1f530e286042f8a60322a494909510</sys_id>
+        <sys_metadata>c578245207f8d010d318fd1e7c1ed090</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_chg_developments</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent display_value="">7e2ad54107385010d318fd1e7c1ed0fd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_c578245207f8d010d318fd1e7c1ed090</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_c578245207f8d010d318fd1e7c1ed090">0978245207f8d010d318fd1e7c1ed094</sys_update_version>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 15:09:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

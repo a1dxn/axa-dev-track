@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_417679_devtrack_m2m_chg_developments</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:04:35</sys_created_on>
+        <sys_id>7e2a194107385010d318fd1e7c1ed022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_chg_developments</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>ua_table_licensing_config_7e2a194107385010d318fd1e7c1ed022</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:04:35</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>ua_table_licensing_config_7e2a194107385010d318fd1e7c1ed022</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_417679_devtrack_m2m_chg_developments</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-13 23:04:35</sys_created_on><sys_id>7e2a194107385010d318fd1e7c1ed022</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack_m2m_chg_developments</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>ua_table_licensing_config_7e2a194107385010d318fd1e7c1ed022</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-13 23:04:35</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>-197778041</payload_hash>
+        <record_name>x_417679_devtrack_m2m_chg_developments</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-13 23:04:35</sys_created_on>
+        <sys_id>762a194107385010d318fd1e7c1ed024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172104854df0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-13 23:04:35</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>be2a19416d3850106fa2c7717995e123</update_guid>
+        <update_guid_history>be2a19416d3850106fa2c7717995e123:-197778041</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 15:09:04</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>122b651d5b1f40a693d0bcb3ade46f29</sys_id>
+        <sys_metadata>7e2a194107385010d318fd1e7c1ed022</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack_m2m_chg_developments</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_7e2a194107385010d318fd1e7c1ed022</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_7e2a194107385010d318fd1e7c1ed022">762a194107385010d318fd1e7c1ed024</sys_update_version>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 15:09:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

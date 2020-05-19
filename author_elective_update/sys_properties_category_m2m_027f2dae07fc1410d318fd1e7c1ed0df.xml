@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="devtrack">798954a207b81410d318fd1e7c1ed03d</category>
+        <order>100</order>
+        <property display_value="x_417679_devtrack.group_name_format" name="x_417679_devtrack.group_name_format">a4fe212a07fc1410d318fd1e7c1ed03a</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 16:28:32</sys_created_on>
+        <sys_id>027f2dae07fc1410d318fd1e7c1ed0df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack.group_name_format.devtrack</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_027f2dae07fc1410d318fd1e7c1ed0df</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 16:28:32</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_properties_category_m2m_027f2dae07fc1410d318fd1e7c1ed0df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="devtrack">798954a207b81410d318fd1e7c1ed03d</category><order>100</order><property display_value="x_417679_devtrack.group_name_format" name="x_417679_devtrack.group_name_format">a4fe212a07fc1410d318fd1e7c1ed03a</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>Aidan.Lovegrove</sys_created_by><sys_created_on>2020-05-18 16:28:32</sys_created_on><sys_id>027f2dae07fc1410d318fd1e7c1ed0df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_417679_devtrack.group_name_format.devtrack</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_properties_category_m2m_027f2dae07fc1410d318fd1e7c1ed0df</sys_update_name><sys_updated_by>Aidan.Lovegrove</sys_updated_by><sys_updated_on>2020-05-18 16:28:32</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>1404592872</payload_hash>
+        <record_name>x_417679_devtrack.group_name_format.devtrack</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 16:28:32</sys_created_on>
+        <sys_id>de7f2dae07fc1410d318fd1e7c1ed0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172289d890e0000001</sys_recorded_at>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 16:28:32</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>1a7f2dae72fc141097ce0e36e157fde1</update_guid>
+        <update_guid_history>1a7f2dae72fc141097ce0e36e157fde1:1404592872</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 17:32:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>2365e0563a974de293512158c5132719</sys_id>
+        <sys_metadata>027f2dae07fc1410d318fd1e7c1ed0df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack.group_name_format.devtrack</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_027f2dae07fc1410d318fd1e7c1ed0df</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_027f2dae07fc1410d318fd1e7c1ed0df">de7f2dae07fc1410d318fd1e7c1ed0e1</sys_update_version>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 17:32:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

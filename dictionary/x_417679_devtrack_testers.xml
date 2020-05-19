@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Development Testers" max_length="40" name="x_417679_devtrack_testers" type="collection">
+        <element attributes="encode_utf8=false" label="Development" max_length="32" name="development" reference="x_417679_devtrack_development" type="reference"/>
+        <element attributes="encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="development"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

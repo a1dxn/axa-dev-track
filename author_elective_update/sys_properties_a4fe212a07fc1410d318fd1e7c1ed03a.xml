@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>Format to set the testing group names as. use $field format to reference a field from the development record.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_417679_devtrack.group_name_format</name>
+        <read_roles/>
+        <suffix>group_name_format</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 16:28:15</sys_created_on>
+        <sys_id>a4fe212a07fc1410d318fd1e7c1ed03a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_417679_devtrack.group_name_format</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_properties_a4fe212a07fc1410d318fd1e7c1ed03a</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 16:41:52</sys_updated_on>
+        <type>string</type>
+        <value>Testers For ($number) $short_description</value>
+        <write_roles>admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=a4fe212a07fc1410d318fd1e7c1ed03a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>sys_properties_a4fe212a07fc1410d318fd1e7c1ed03a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Format to set the testing group names as. use $field format to reference a field from the development record.</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>x_417679_devtrack.group_name_format</name><read_roles/><suffix>group_name_format</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>Aidan.Lovegrove</sys_created_by><sys_created_on>2020-05-18 16:28:15</sys_created_on><sys_id>a4fe212a07fc1410d318fd1e7c1ed03a</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_417679_devtrack.group_name_format</sys_name><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>sys_properties_a4fe212a07fc1410d318fd1e7c1ed03a</sys_update_name><sys_updated_by>Aidan.Lovegrove</sys_updated_by><sys_updated_on>2020-05-18 16:41:52</sys_updated_on><type>string</type><value>Testers For ($number) $short_description</value><write_roles>admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=a4fe212a07fc1410d318fd1e7c1ed03a"/></record_update>]]></payload>
+        <payload_hash>837416255</payload_hash>
+        <record_name>x_417679_devtrack.group_name_format</record_name>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 16:41:53</sys_created_on>
+        <sys_id>f18231a207305410d318fd1e7c1ed059</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17228a9c2b70000001</sys_recorded_at>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 16:41:53</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>398231a204305410cac1b7a6e80af458</update_guid>
+        <update_guid_history>398231a204305410cac1b7a6e80af458:837416255,3f91b162e4305410243be620c2b15412:1388178179,526fe9ae4ffc141044d849d0a279c2fe:1885560087</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 17:32:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>10878504e6ea471c836a6cc237315cb1</sys_id>
+        <sys_metadata>a4fe212a07fc1410d318fd1e7c1ed03a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack.group_name_format</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>sys_properties_a4fe212a07fc1410d318fd1e7c1ed03a</sys_update_name>
+        <sys_update_version display_value="sys_properties_a4fe212a07fc1410d318fd1e7c1ed03a">f18231a207305410d318fd1e7c1ed059</sys_update_version>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 17:32:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

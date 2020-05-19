@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>sys_id of group to automatically assign developments to</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_417679_devtrack.developer_group</name>
+        <read_roles/>
+        <suffix>developer_group</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-05-18 15:14:23</sys_created_on>
+        <sys_id>7d5e116e07bc1410d318fd1e7c1ed094</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_417679_devtrack.developer_group</sys_name>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>sys_properties_7d5e116e07bc1410d318fd1e7c1ed094</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-05-18 15:14:23</sys_updated_on>
+        <type>string</type>
+        <value/>
+        <write_roles>admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=7d5e116e07bc1410d318fd1e7c1ed094"/>
+</record_update>
