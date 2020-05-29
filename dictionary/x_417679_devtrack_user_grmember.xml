@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_user_grmember" label="Development Group Member" max_length="40" name="x_417679_devtrack_user_grmember" type="collection"/>
-</database>
