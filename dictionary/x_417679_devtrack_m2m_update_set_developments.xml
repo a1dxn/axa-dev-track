@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Devtrack M2m Update Set Developments" max_length="40" name="x_417679_devtrack_m2m_update_set_developments" type="collection">
+    <element label="Devtrack M2m Update Set Developments" max_length="40" name="x_417679_devtrack_m2m_update_set_developments" sizeclass="3" type="collection">
         <element attributes="encode_utf8=false" label="Development" max_length="32" name="development" reference="x_417679_devtrack_development" type="reference"/>
         <element attributes="encode_utf8=false" label="Retrieved Update Set" max_length="32" name="update_set" reference="sys_remote_update_set" type="reference"/>
         <index name="index">

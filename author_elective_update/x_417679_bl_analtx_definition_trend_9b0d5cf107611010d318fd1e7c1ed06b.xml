@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_417679_bl_analtx_definition_trend">
+    <x_417679_bl_analtx_definition_trend action="DELETE">
+        <definition display_value="">8f0d1c7107611010d318fd1e7c1ed036</definition>
+        <label>15</label>
+        <sys_class_name>x_417679_bl_analtx_definition_trend</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-06-22 09:21:12</sys_created_on>
+        <sys_id>9b0d5cf107611010d318fd1e7c1ed06b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_update_name>x_417679_bl_analtx_definition_trend_9b0d5cf107611010d318fd1e7c1ed06b</sys_update_name>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-06-22 09:21:12</sys_updated_on>
+        <upper_limit_dur>1970-01-16 00:00:00</upper_limit_dur>
+    </x_417679_bl_analtx_definition_trend>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</application>
+        <file_path/>
+        <instance_id>90ea7229dba17f04387021c4059619f4</instance_id>
+        <instance_name>dev85960</instance_name>
+        <name>x_417679_bl_analtx_definition_trend_9b0d5cf107611010d318fd1e7c1ed06b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_417679_bl_analtx_definition_trend"><x_417679_bl_analtx_definition_trend action="INSERT_OR_UPDATE"><definition display_value="">8f0d1c7107611010d318fd1e7c1ed036</definition><label>15</label><sys_class_name>x_417679_bl_analtx_definition_trend</sys_class_name><sys_created_by>Aidan.Lovegrove</sys_created_by><sys_created_on>2020-06-22 09:21:12</sys_created_on><sys_id>9b0d5cf107611010d318fd1e7c1ed06b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package><sys_policy/><sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope><sys_update_name>x_417679_bl_analtx_definition_trend_9b0d5cf107611010d318fd1e7c1ed06b</sys_update_name><sys_updated_by>Aidan.Lovegrove</sys_updated_by><sys_updated_on>2020-06-22 09:21:12</sys_updated_on><upper_limit_dur>1970-01-16 00:00:00</upper_limit_dur></x_417679_bl_analtx_definition_trend></record_update>]]></payload>
+        <payload_hash>-377543767</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a4efbc4d07745010d318fd1e7c1ed093</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-06-22 09:21:12</sys_created_on>
+        <sys_id>ab4d54f507611010d318fd1e7c1ed05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172db54e0650000001</sys_recorded_at>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-06-22 09:21:12</sys_updated_on>
+        <type>BA Definition Trend</type>
+        <update_guid>e34d54f5d36110109da5a16032373f5f</update_guid>
+        <update_guid_history>e34d54f5d36110109da5a16032373f5f:-377543767</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b8dddcf507611010d318fd1e7c1ed04f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aidan.Lovegrove</sys_created_by>
+        <sys_created_on>2020-06-22 09:23:28</sys_created_on>
+        <sys_db_object display_value="" name="x_417679_bl_analtx_definition_trend">x_417679_bl_analtx_definition_trend</sys_db_object>
+        <sys_id>54ba1e5f897146e29e26e5d81f33f9b1</sys_id>
+        <sys_metadata>9b0d5cf107611010d318fd1e7c1ed06b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Development Tracker" source="x_417679_devtrack">24eff4c907745010d318fd1e7c1ed0fe</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Development Tracker">24eff4c907745010d318fd1e7c1ed0fe</sys_scope>
+        <sys_scope_delete display_value="">1e078d7e47ad4272978a4946332aa9f1</sys_scope_delete>
+        <sys_update_name>x_417679_bl_analtx_definition_trend_9b0d5cf107611010d318fd1e7c1ed06b</sys_update_name>
+        <sys_update_version display_value="x_417679_bl_analtx_definition_trend_9b0d5cf107611010d318fd1e7c1ed06b">ab4d54f507611010d318fd1e7c1ed05f</sys_update_version>
+        <sys_updated_by>Aidan.Lovegrove</sys_updated_by>
+        <sys_updated_on>2020-06-22 09:23:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

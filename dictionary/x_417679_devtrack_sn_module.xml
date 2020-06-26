@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="SN Module" max_length="40" name="x_417679_devtrack_sn_module" type="collection">
+    <element label="SN Module" max_length="40" name="x_417679_devtrack_sn_module" sizeclass="3" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element display="true" label="Module Name" mandatory="true" max_length="100" name="module_name" type="string"/>
         <element label="Module Owner" mandatory="true" max_length="40" name="module_owner" reference="sys_user" reference_qual="active=true^roles=itil^EQ" reference_qual_condition="active=true^roles=itil^EQ" type="reference"/>
